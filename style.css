@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap");
+
+/* MAIN VARIABLES */
+
+:root {
+  --almond: #ede0d4ff;
+  --desert-sand: #e6ccb2ff;
+  --tan: #ddb892ff;
+  --cafe-au-lait: #b08968ff;
+  --coffee: #7f5539ff;
+  --brown-sugar: #9c6644ff;
+}
+
+/* BODY SECTION */
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--almond);
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--almond);
+  background-image: linear-gradient(
+      35deg,
+      rgba(237, 224, 212, 0.2),
+      rgba(127, 85, 57, 0.7)
+    ),
+    url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* HEADER SECTION */
+
+#header {
+  text-align: center;
+  color: var(--almond);
+}
+
+#header h1 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+#header p {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+/* MAIN SECTION */
+
+#main {
+  color: var(--almond);
+  background-color: rgba(127, 85, 57, 0.7);
+  width: 65%;
+  margin: 30px auto;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+}
+
+#survey-form {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#survey-form label {
+  align-self: flex-start;
+  margin: 0.3rem 0;
+}
+
+#survey-form p {
+  margin-top: 1.2;
+  margin-bottom: 0.3rem;
+}
+
+.form-input {
+  font-size: inherit;
+  font-style: italic;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-input:focus {
+  border-color: var(--coffee);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem var(--cafe-au-lait);
+}
+
+input[type="radio"] {
+  min-height: 1.1rem;
+  min-width: 1.1rem;
+  margin: 0.3rem 0.5rem;
+}
+
+input[type="checkbox"] {
+  min-height: 1.1rem;
+  min-width: 1.1rem;
+  margin: 0.3rem 0.5rem;
+}
+
+#survey-form .text-comments {
+  margin-top: 1.5rem;
+}
+
+#survey-form button {
+  background-color: var(--almond);
+  font-style: normal;
+  font-weight: bold;
+  border-style: none;
+}
+
+#survey-form button:hover {
+  background-color: var(--tan);
+}
+
+/* MEDIA QUERIES SECTION */
+
+@media (max-width: 576px) {
+  #main {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #main {
+    min-width: 80%;
+  }
+}

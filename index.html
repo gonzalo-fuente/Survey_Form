@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Costumer Satisfaction</title>
+</head>
+<body>
+    <header id="header">
+        <h1 id="title">Customer Satisfaction Survey Form</h1>
+        <p id="description">
+            This form will only take 5 minutes of your time, but it will help us a lot...
+        </p>
+    </header>
+
+    <main id="main">
+        <form id="survey-form">
+            
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-input" placeholder="Your name here..." required>
+
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-input" placeholder="Your email here..." required>
+
+            <label id="number-label" for="age">Age (optional)</label>
+            <input type="number" name="age" id="number" class="form-input" min="15" max="100" placeholder="If you wish you can tell us your age...">
+
+            <label for="dropdown" id="dropdown-label">How satisfied are you with our company?</label>
+            <select name="dropown" id="dropdown" class="form-input" required>
+                <option disabled selected value>Your satisfaction level...</option>
+                <option value="verySatisfied">Very satisfied</option>
+                <option value="aBitSatisfied">A bit satisfied</option>
+                <option value="neutral">Neutral</option>
+                <option value="dissatisfied">Dissatisfied</option>
+                <option value="veryDissatisfied">Very dissatisfied</option>
+            </select>
+
+            
+            <p>Which of the following words you would like to use to describe our company?</p>
+            <label>
+                <input type="radio" name="describing-company" id="highQuality" class="form-input" value="highQuality" checked>
+                High Quality</label>
+            <label>
+                <input type="radio" name="describing-company" id="useful" class="form-input" value="useful">
+                Useful</label>
+            <label>
+                <input type="radio" name="describing-company" id="unique" class="form-input" value="unique">
+                Unique</label>
+            <label>
+                <input type="radio" name="describing-company" id="poorQuality" class="form-input" value="poorQuality">
+                Poor quality</label>
+            <label>
+                <input type="radio" name="describing-company" id="ineffective" class="form-input" value="ineffective">
+                Ineffective</label>
+            <label>                    
+                <input type="radio" name="describing-company" id="impractical" class="form-input"
+                value="impractical">
+                Impractical</label>
+
+            <p>Which of the following words you would like to use to describe our product?<br>You can select as many as you want</p>
+            <label>
+                <input type="checkbox" name="describing-product" id="futuristic" class="form-input" value="futuristic">
+                Futuristic</label>
+            <label>
+                <input type="checkbox" name="describing-product" id="elegant" class="form-input" value="elegant">
+                Elegant</label>
+            <label>
+                <input type="checkbox" name="describing-product" id="dynamic" class="form-input" value="dynamic">
+                Dynamic</label>
+            <label>
+                <input type="checkbox" name="describing-product" id="simple" class="form-input" value="simple">
+                Simple</label>
+            <label>
+                <input type="checkbox" name="describing-product" id="delicate" class="form-input" value="delicate">
+                Delicate</label>
+            <label>
+                <input type="checkbox" name="describing-product" id="innovative" class="form-input" value="innovative">
+                Innovative</label>           
+            <label>
+                <input type="checkbox" name="describing-product" id="complex" class="form-input" value="complex">
+                Complex</label>
+            <label>
+                <input type="checkbox" name="describing-product" id="rough" class="form-input" value="rough">
+                Rough</label>
+            <label>
+                <input type="checkbox" name="describing-product" id="imitative" class="form-input" value="imitative">
+                Imitative</label>
+            <label>
+                <input type="checkbox" name="describing-product" id="static" class="form-input" value="static">
+                Static</label>
+            <label>
+                <input type="checkbox" name="describing-product" id="not-elegant" class="form-input" value="notElegant">
+                Not elegant</label>
+            <label>
+                <input type="checkbox" name="describing-product" id="nostalgic" class="form-input" value="nostalgic">
+                Nostalgic</label>
+
+            
+            <label for="comments" class="text-comments">Please feel free to add any extra comment</label>
+            <textarea name="comments" id="comments" class="form-input" cols="50" rows="7" placeholder="Your comments here..."></textarea>
+
+            <button type="submit" id="submit" class="form-input">Submit</button>
+         </form>
+    </main>
+    <script src="/bundle.js"></script>
+</body>
+</html>
