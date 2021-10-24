@@ -1,5 +1,8 @@
 # Survey_Form
+
 Fully responsive survey form (freeCodeCamp second exercise)
+
+[Link to the site!](https://gonzalo-fuente.github.io/Survey_Form/)
 
 ![sample image of web page](Survey.png)
 
